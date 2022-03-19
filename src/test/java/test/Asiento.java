@@ -15,12 +15,12 @@ public class Asiento
 		Blanco
 	}
 	
-	public void cambiarColor(String ncolor)
+	public void cambiarColor(String color)
 	{
 		for(Colores s : Colores.values())
 		{
 			if(ncolor.toUpperCase() == s.name().toUpperCase())
-				this.color = ncolor;
+				this.color = color;
 		}
 	}
 }
