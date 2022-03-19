@@ -8,18 +8,18 @@ public class Asiento
 	
 	public enum Colores 
 	{
-		ROJO, 
-		VERDE, 
-		AMARILLO, 
-		NEGRO, 
-		BLANCO
+		Rojo, 
+		Verde, 
+		Amarillo, 
+		Negro, 
+		Blanco
 	}
 	
 	public void cambiarColor(String ncolor)
 	{
 		for(Colores s : Colores.values())
 		{
-			if(ncolor == s.name())
+			if(ncolor.toUpperCase() == s.name().toUpperCase())
 				this.color = ncolor;
 		}
 	}
