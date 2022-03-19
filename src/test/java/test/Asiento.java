@@ -19,7 +19,7 @@ public class Asiento
 	{
 		for(Colores s : Colores.values())
 		{
-			if(ncolor.toUpperCase().equals(s.name().toUpperCase()))
+			if(color.toUpperCase().equals(s.name().toUpperCase()))
 				this.color = color;
 		}
 	}
