@@ -5,7 +5,7 @@ public class Auto
 	public String modelo;
 	public int precio;
 	
-	public Asiento asiento[];
+	public Asiento asientos[];
 	public String marca;
 	public Motor motor;
 	
@@ -14,7 +14,7 @@ public class Auto
 	
 	public int cantidadAsientos()
 	{
-		return this.asiento.length;
+		return this.asientos.length;
 	}
 	
 	public String verificarIntegridad()
@@ -22,7 +22,7 @@ public class Auto
 		if(this.registro != this.motor.registro)
 			return "Las piezas no son originales";
 		
-		for(int i = 0; i <= this.asiento.length; i++)
+		for(int i = 0; i <= this.asientos.length; i++)
 		{
 			if(this.registro != this.asiento[i].registro)
 				return "Las piezas no son originales";
